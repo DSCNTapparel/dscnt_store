@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DSCNT Apparel</title>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Horizon:wght@400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Horizon', sans-serif;
+      font-family: 'Orbitron', sans-serif;
       overflow: hidden;
       background-color: black;
     }
 
     /* Background video */
-    .video-bg {
+    #bg-video {
       position: fixed;
-      right: 0;
-      bottom: 0;
+      top: 0;
+      left: 0;
       min-width: 100%;
       min-height: 100%;
-      z-index: -1;
       object-fit: cover;
+      z-index: -1;
     }
 
     /* Header */
@@ -64,12 +65,12 @@
       font-weight: bold;
     }
 
-    /* Center title text with reflection */
+    /* Center title text */
     .center-text {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) scaleY(-1);
+      transform: translate(-50%, -50%);
       color: white;
       font-size: 4rem;
       font-weight: bold;
@@ -109,8 +110,8 @@
 <body>
 
   <!-- Background Video -->
-  <video class="video-bg" autoplay muted loop playsinline>
-    <source src="background.mp4" type="video/mp4">
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
 
@@ -125,12 +126,12 @@
     </nav>
   </header>
 
-  <!-- Center reflected text -->
+  <!-- Center title text -->
   <div class="center-text">DSCNT APPAREL</div>
 
   <!-- Bottom left slogan & button -->
   <div class="bottom-left">
-    EMBRACE YOUR DSCNT<br>
+    EMBRACE YOUR DSCNT<br />
     <button class="shop-btn">SHOP NOW</button>
   </div>
 
