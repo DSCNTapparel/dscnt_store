@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DSCNT Apparel</title>
+
+<!-- Horizon Font (Reverse Horizon not free; using horizon look-alike) -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Anton', sans-serif;
+        overflow: hidden;
+    }
+
+    /* Fullscreen video */
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Floating pill-shaped header */
+    header {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-right: 40px;
+    }
+
+    header nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+        color: #555;
+    }
+
+    /* Centered reverse text logo */
+    .center-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(-1); /* flips text horizontally */
+        color: white;
+        font-size: 5em;
+        letter-spacing: 3px;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Bottom left CTA */
+    .bottom-left {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        color: white;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+
+    .bottom-left button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        background: white;
+        color: black;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .bottom-left button:hover {
+        background: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<!-- Video Background -->
+<video autoplay muted loop playsinline>
+    <source src="YOUR-VIDEO.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+</video>
+
+<!-- Floating Header -->
+<header>
+    <div class="logo">DSCNT Apparel</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+        <a href="#">Help</a>
+    </nav>
+</header>
+
+<!-- Center Reverse Text -->
+<div class="center-logo">DSCNT APPAREL</div>
+
+<!-- Bottom Left CTA -->
+<div class="bottom-left">
+    EMBRACE YOUR DSCNT<br>
+    <button>SHOP NOW</button>
+</div>
+
+</body>
+</html>
