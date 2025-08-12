@@ -4,17 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DSCNT Apparel</title>
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Orbitron', sans-serif;
       overflow: hidden;
-      background-color: black;
+      font-family: 'Orbitron', sans-serif;
+      background: black;
     }
 
     /* Background video */
@@ -22,13 +21,13 @@
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100%;
-      min-height: 100%;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
       z-index: -1;
     }
 
-    /* Header */
+    /* Header styling */
     header {
       position: fixed;
       top: 20px;
@@ -42,7 +41,7 @@
       padding: 12px 30px;
       width: 80%;
       max-width: 1000px;
-      z-index: 1000;
+      z-index: 10;
     }
 
     .logo {
@@ -65,20 +64,22 @@
       font-weight: bold;
     }
 
-    /* Center title text */
+    /* Center main text */
     .center-text {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
       font-size: 4rem;
       font-weight: bold;
+      color: white;
       text-align: center;
       opacity: 0.85;
+      z-index: 5;
+      user-select: none;
     }
 
-    /* Bottom left content */
+    /* Bottom left slogan & button */
     .bottom-left {
       position: absolute;
       bottom: 40px;
@@ -86,6 +87,7 @@
       color: white;
       font-size: 1.5rem;
       font-weight: bold;
+      z-index: 5;
     }
 
     .shop-btn {
@@ -126,7 +128,7 @@
     </nav>
   </header>
 
-  <!-- Center title text -->
+  <!-- Center text -->
   <div class="center-text">DSCNT APPAREL</div>
 
   <!-- Bottom left slogan & button -->
